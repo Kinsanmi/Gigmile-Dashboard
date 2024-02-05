@@ -1,0 +1,104 @@
+.nav-menu{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 25px 0 0 0;
+    height: 65px;
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 40px;
+
+        h1{
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+        }
+
+
+        .input-text{
+            display: flex;
+            align-items: center;
+
+            .input{
+                display: flex;
+                align-items: center;
+                border: 1px solid #FAFAFA;
+                padding: 8px;
+                border-radius: 6px;
+                background: #FAFAFA;
+                box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1), 0 -1px 1px #FAFAFA, 0 1px 0 #FAFAFA;
+                margin-right: 15px;
+
+                .icon{
+                    font-size: 20px;
+                    color: #474F54;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                input{
+                    outline: none;
+                    border: none;
+                    background: transparent;
+                    width: 350px;
+                    font-size: 16px;
+
+                    &::placeholder{
+                        font-size: 16px;
+                        color: #474F54;
+                    }
+                }
+
+                
+            }
+
+
+            .note-icon{
+                display: flex;
+                align-items: center;
+
+                .item{
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-right: 0.8rem;
+                    cursor: pointer;
+
+                    .icon{
+                        font-size: 24px;
+                        color: #000;
+                    }
+
+                    p{
+                        position: absolute;
+                        top: 4px;
+                        right: 5px;
+                        background-color: red;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                    }
+                }
+
+                .profile{
+                    display: flex;
+                    align-items: center;
+                    gap: 0.4rem;
+                    cursor: pointer;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                    }
+                }     
+            }
+        }
+    }
+}

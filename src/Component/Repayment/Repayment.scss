@@ -1,0 +1,92 @@
+.active-list {
+  .act-feed {
+    .act-line {
+      .act-number {
+        p {
+          background: #a0aec0;
+          color: #fff;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .repayment {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+
+      .cap-names {
+        th {
+          color: #a0aec0;
+          font-size: 14px;
+          text-transform: capitalize;
+          font-weight: 400;
+          letter-spacing: 0.3px;
+          line-height: 1.2;
+          margin-bottom: 15px;
+        }
+      }
+
+      .table-list {
+
+        td{
+          border: 4px solid red;
+          padding: 10px;
+        }
+        .list-img {
+          // display: flex;
+          // align-items: center;
+
+          img {
+            max-width: 18px;
+            max-height: 18px;
+          }
+
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        .services {
+          h1 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .amount {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+
+        .date {
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+}

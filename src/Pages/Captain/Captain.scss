@@ -1,0 +1,126 @@
+.cap {
+  padding: 40px;
+
+  .active-cap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .graph {
+      flex: 2;
+      border: 1px solid #d9dade;
+    }
+
+    .default {
+      flex: 1;
+      border: 1px solid #d9dade;
+
+      .default-value {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #eef0f6;
+        padding: 15px;
+
+        .fuel {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          margin-bottom: 8px;
+
+          .fuel-img {
+            background: #e25c5c1b;
+            padding: 5px;
+            border-radius: 3px;
+            img {
+              width: 25px;
+            }
+          }
+
+          h2 {
+            font-size: 16px;
+            color: #1e1e1e;
+            font-weight: 600;
+            line-height: 1.1;
+            letter-spacing: 0.4px;
+          }
+        }
+
+        h2 {
+          color: #a7a8a8;
+          font-size: 15px;
+          text-transform: capitalize;
+          font-weight: 400;
+        }
+      }
+
+      .overall {
+        padding: 20px 15px 0 15px;
+
+        h2 {
+          font-size: 15px;
+          color: #474f54;
+          text-transform: capitalize;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+
+          span {
+            margin-left: 8px;
+            font-size: 22px;
+            color: #1e1e1e;
+            font-weight: 600;
+          }
+        }
+
+        .paid {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          height: 200px;
+
+          h5 {
+            color: #474f54;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+          }
+
+          h1 {
+            font-size: 32px;
+            color: #1e1e1e;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            line-height: 1.3;
+          }
+
+          .paid-amount {
+            margin-top: 6px;
+            p {
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              color: #1db385;
+              font-weight: 400;
+
+              span {
+                color: #a0aec0;
+                margin-left: 8px;
+              }
+
+              .arrow {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .gig-cap {
+      flex: 1;
+      border: 1px solid #d9dade;
+    }
+  }
+}

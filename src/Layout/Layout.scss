@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+
+    .navbar{
+        flex: 6;
+        // background-color: green;
+
+        .services{
+            display: flex;
+            gap: 1.2rem;
+            cursor: default;
+        }
+    }
+}
