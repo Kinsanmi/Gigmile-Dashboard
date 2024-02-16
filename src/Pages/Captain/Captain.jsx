@@ -4,6 +4,7 @@ import frame from "../images/Frame 26822.png";
 import { IoMdArrowDropup } from "react-icons/io";
 import { Graph } from "./Graph/Graph";
 import { Service } from "./Service/Service";
+import { WorkingCapital } from "./WorkingCaptial/WorkingCapital";
 
 export const Captain = () => {
   return (
@@ -42,6 +43,8 @@ export const Captain = () => {
 
         <div className="gig-cap"><Service /></div>
       </div>
+
+      <WorkingCapital />
     </div>
   );
 };

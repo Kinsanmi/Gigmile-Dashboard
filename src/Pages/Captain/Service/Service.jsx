@@ -1,5 +1,6 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import './Service.scss';
 
 export const Service = () => {
   const series = [44, 55, 41, 17];
@@ -77,15 +78,15 @@ export const Service = () => {
   };
 
   return (
-    <div>
-      <div>
-        <div>
+    <div className="serve"> 
+      <div className="break">
+        <div className="breakdown">
           <h3>Service request breakdown </h3>
         </div>
         <p>Total working capital requests so far</p>
       </div>
 
-      <div>
+      <div className="chart-bar">
         <Chart
           options={options}
           series={series}

@@ -29,9 +29,11 @@ export const Repayment = () => {
             return (
               <tbody>
                 <tr className="table-list">
-                  <td className="list-img">
-                    <img src={AR} alt="profile image" />
-                    <h2>{items.name}</h2>
+                  <td>
+                    <div className="list-img">
+                      <img src={items.image} alt="profile image" />
+                      <h2>{items.name}</h2>
+                    </div>
                   </td>
                   <td className="services">
                     <h1>{items.service}</h1>

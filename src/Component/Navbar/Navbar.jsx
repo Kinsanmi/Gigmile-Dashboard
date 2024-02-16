@@ -4,12 +4,14 @@ import { CiSearch } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { MdOutlineNoteAlt } from "react-icons/md";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
 
-export const Navbar = () => {
+export const Navbar = ({sideBar, sideBarNav}) => {
   return (
     <div className="nav-menu">
       <div className="wrapper">
         <h1>Hello Michael!</h1>
+        <div className={`hamburger-menu ${sideBar ? "open" : ""}`} onClick={sideBarNav}><AiOutlineMenuUnfold /></div>
 
         <div className="input-text">
           <div className="input">

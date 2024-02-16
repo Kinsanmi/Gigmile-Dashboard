@@ -13,20 +13,18 @@ import { LuGanttChartSquare } from "react-icons/lu";
 
 import gig from "./image/Icon.png";
 
-export const Sidebar = () => {
-
+export const Sidebar = ({sideBar}) => {
   const [currentPage, setCurrentPage] = useState(window.location.pathname);
+  
 
-    const pageChange = (path) =>{
-      setCurrentPage(path);
-    }
-
-
-
+  const pageChange = (path) => {
+    setCurrentPage(path);
+  };
 
 
   return (
-    <div className="sidebar">
+    
+    <div className={`sidebar ${sideBar ? "open" : ""}`}>
       <div className="logo">
         <div className="logo-img">
           <img src={gig} alt="" />
@@ -50,19 +48,30 @@ export const Sidebar = () => {
           <ul>
             <li className={currentPage === "/dashboard" ? "active" : ""}>
               <GoHome className="icon" />
-              <a href="/dashboard" onClick={() => pageChange("/dashboard")}>Dashboard</a>
+              <a href="/dashboard" onClick={() => pageChange("/dashboard")}>
+                Dashboard
+              </a>
             </li>
-            <li className={currentPage === "/captains" ? "active" : ""}  > 
+            <li className={currentPage === "/captains" ? "active" : ""}>
               <IoPeopleOutline className="icon" />
-              <a href="/captains" onClick={() => pageChange("/captains")}>Captains</a>
+              <a href="/captains" onClick={() => pageChange("/captains")}>
+                Captains
+              </a>
             </li>
             <li className={currentPage === "/service/request" ? "active" : ""}>
               <IoDocumentTextOutline className="icon" />
-              <a href="/service/request" onClick={() => pageChange("/service/request")}>Service request</a>
+              <a
+                href="/service/request"
+                onClick={() => pageChange("/service/request")}
+              >
+                Service request
+              </a>
             </li>
             <li className={currentPage === "/partners" ? "active" : ""}>
               <IoBriefcaseOutline className="icon" />
-              <a href="/partners" onClick={() => pageChange("/partners")}>Service Partners</a>
+              <a href="/partners" onClick={() => pageChange("/partners")}>
+                Service Partners
+              </a>
             </li>
             <li>
               <AiOutlinePieChart className="icon" />

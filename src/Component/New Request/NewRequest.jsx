@@ -1,7 +1,7 @@
 import React from "react";
 import "./Newrequest.scss";
-import AR from "../Sidebar/image/bnb.png";
 import { Repayment } from "../Repayment/Repayment";
+import { newValue } from "./Request";
 
 export const NewRequest = () => {
   return (
@@ -13,94 +13,35 @@ export const NewRequest = () => {
             <p>7</p>
           </div>
         </div>
-
-        <div className="list">
-          <div className="list-type">
-            <div className="total-val">
-              <div className="val">
-                <h3>Captain</h3>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-                <div className="types">
-                  <img src={AR} alt="" />
-                  <h2>Alan Richard michaelson</h2>
-                </div>
-              </div>
-
-              <div className="val">
-                <h4>Service type</h4>
-                <div className="services">
-                  <h1>Motorcycle financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Smartphone financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Motorcycle financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Smartphone financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Motorcycle financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Smartphone financing</h1>
-                </div>
-                <div className="services">
-                  <h1>Motorcycle financing</h1>
-                </div>
-              </div>
-
-              <div className="val">
-                <h5>Total request value</h5>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-                <div className="amount">
-                  <h1>N 120,000,000.0</h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <table className="repayment">
+          <thead>
+            <tr className="cap-names">
+              <th>Captain</th>
+              <th>Service Type</th>
+              <th>Total Request Value</th>
+            </tr>
+          </thead>
+          {newValue.map((items) => {
+            return (
+              <tbody>
+                <tr className="table-list">
+                  <td>
+                    <div className="list-img">
+                      <img src={items.image} alt="profile image" />
+                      <h2>{items.name}</h2>
+                    </div>
+                  </td>
+                  <td className="services">
+                    <h1>{items.service}</h1>
+                  </td>
+                  <td className="amount">
+                    <h2>{items.price}</h2>
+                  </td>
+                </tr>
+              </tbody>
+            );
+          })}
+        </table>
       </div>
 
       <Repayment />

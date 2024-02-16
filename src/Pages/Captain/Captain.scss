@@ -1,36 +1,43 @@
 .cap {
-  padding: 40px;
+  padding: 20px 40px;
 
   .active-cap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    height: auto;
+    margin-top: 20px;
 
     .graph {
-      flex: 2;
+      flex: 1.4;
       border: 1px solid #d9dade;
+      height: 320px;
+      border-radius: 5px;
     }
 
     .default {
       flex: 1;
       border: 1px solid #d9dade;
+      height: 320px;
+      border-radius: 5px;
 
       .default-value {
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid #eef0f6;
         padding: 15px;
+        height: 75px;
 
         .fuel {
           display: flex;
           align-items: center;
           gap: 0.4rem;
-          margin-bottom: 8px;
+          margin-bottom: 6px;
 
           .fuel-img {
-            background: #e25c5c1b;
-            padding: 5px;
+            background: rgba(226, 92, 92, 0.106);
+            padding: 4px;
             border-radius: 3px;
             img {
               width: 25px;
@@ -66,7 +73,7 @@
 
           span {
             margin-left: 8px;
-            font-size: 22px;
+            font-size: 20px;
             color: #1e1e1e;
             font-weight: 600;
           }
@@ -81,14 +88,14 @@
 
           h5 {
             color: #474f54;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             letter-spacing: 0.5px;
             margin-bottom: 6px;
           }
 
           h1 {
-            font-size: 32px;
+            font-size: 30px;
             color: #1e1e1e;
             font-weight: 700;
             letter-spacing: 0.2px;
@@ -100,7 +107,7 @@
             p {
               display: flex;
               align-items: center;
-              font-size: 16px;
+              font-size: 14px;
               color: #1db385;
               font-weight: 400;
 
@@ -121,6 +128,56 @@
     .gig-cap {
       flex: 1;
       border: 1px solid #d9dade;
+      height: 320px;
+      border-radius: 5px;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+  .cap {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .cap .active-cap {
+    flex-basis: 20%;
+    flex-wrap: wrap;
+  }
+
+  .cap .active-cap .default {
+    height: auto;
+    border-radius: 4px;
+  }
+  .cap .active-cap .gig-cap {
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .cap .active-cap .default .default-value .fuel h2 {
+    font-size: 14px;
+  }
+  .cap .active-cap .default .default-value h2 {
+    color: #a7a8a8;
+    font-size: 13px;
+  }
+  .cap .active-cap .default .overall h2 {
+    font-size: 13px;
+  }
+  .cap .active-cap .default .overall h2 span {
+    margin-left: 6px;
+    font-size: 18px;
+  }
+
+  .cap .active-cap .default .overall .paid h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cap .active-cap {
+    flex-basis: 20%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
 }

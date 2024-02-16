@@ -1,5 +1,7 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import "./Graph.scss";
+import { IoMdPeople } from "react-icons/io";
 
 export const Graph = () => {
   const chartData = {
@@ -53,28 +55,29 @@ export const Graph = () => {
   };
 
   return (
-    <div>
-      <header>
-        <div>
+    <div className="capital">
+      <div className="chart-donut">
+        <div className="donut">
           <span>
-            <img src="" alt="" />
+            <img
+              src="https://res.cloudinary.com/dkngsthge/image/upload/v1707176504/Frame_26822_rfmyox.png"
+              alt=""
+            />
           </span>
           <h3>Working Capital Service Request</h3>
         </div>
 
         <p>
-          Ongoing gigmile working capital service requests{" "}
-          <span>last 30 days</span>
+          Ongoing gigmile working capital service request
+          <li>Last 30 days</li>
         </p>
-      </header>
+      </div>
 
-      <div>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <p>
+      <div className="donut-list">
+          <IoMdPeople className="contact" />
+        <h2>
           Overall: <span>678,765</span>
-        </p>
+        </h2>
       </div>
 
       <div>
