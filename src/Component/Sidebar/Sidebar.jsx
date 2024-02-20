@@ -67,15 +67,15 @@ export const Sidebar = ({sideBar}) => {
                 Service request
               </a>
             </li>
-            <li className={currentPage === "/partners" ? "active" : ""}>
+            <li>
               <IoBriefcaseOutline className="icon" />
-              <a href="/partners" onClick={() => pageChange("/partners")}>
+              <a>
                 Service Partners
               </a>
             </li>
             <li>
               <AiOutlinePieChart className="icon" />
-              <a href="/asset metrics">Asset Metrics</a>
+              <a>Asset Metrics</a>
             </li>
             <li>
               <LuGanttChartSquare className="icon" />

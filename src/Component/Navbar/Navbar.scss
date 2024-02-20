@@ -135,3 +135,16 @@
     color: #fff;
   }
 }
+
+
+@media screen and (max-width: 480px) {
+  .nav-menu .wrapper .input-text .note-icon {
+    display: none;
+}
+.nav-menu .wrapper .input-text .input {
+  display: none;
+}
+.nav-menu .wrapper .input-text {
+  display: none;
+}
+}

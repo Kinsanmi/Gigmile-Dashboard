@@ -116,6 +116,11 @@
   }
 }
 
+
+
+
+
+
 @media screen and (max-width: 600px) {
   .request {
     padding: 15px 0 15px 15px;
@@ -137,3 +142,14 @@
     white-space: nowrap;
   }
 }
+
+
+@media screen and (max-width: 480px){
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 450px;
+    overflow-x: scroll;
+}
+}
+
+

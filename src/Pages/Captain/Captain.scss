@@ -3,7 +3,6 @@
 
   .active-cap {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 1rem;
     height: auto;
@@ -134,6 +133,8 @@
   }
 }
 
+
+
 @media screen and (max-width: 600px) {
   .cap {
     padding: 15px;
@@ -173,11 +174,28 @@
   }
 }
 
+
+
 @media screen and (max-width: 480px) {
+  .cap {
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+  }
   .cap .active-cap {
-    flex-basis: 20%;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
+  .cap .active-cap .default {
+    height: auto;
+    width: auto;
+  }
+
+  .cap .active-cap {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: auto;
+    margin-top: 20px;
+  }
 }

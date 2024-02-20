@@ -161,6 +161,7 @@
   }
 }
 
+
 @media screen and (max-width: 600px) {
   .pending .search {
     flex-wrap: wrap;
@@ -184,18 +185,16 @@
     font-size: 14px;
   }
 
-
-  .pending .active-list{
+  .pending .active-list {
     width: 550px;
   }
-  .active-list .scroll{
+  .active-list .scroll {
     overflow-x: scroll;
     width: 100%;
   }
 
-  .repayment thead, .repayment tbody{
+  .repayment thead,
+  .repayment tbody {
     white-space: nowrap;
   }
-
-
 }

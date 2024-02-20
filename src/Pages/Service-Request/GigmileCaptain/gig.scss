@@ -25,12 +25,18 @@
     width: 570px;
     overflow-x: scroll;
   }
-  .active-list .scroll {
-    
-  }
+
 
   .repayment thead,
   .repayment tbody {
     white-space: nowrap;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .pending .active-list {
+    width: 450px;
   }
 }
