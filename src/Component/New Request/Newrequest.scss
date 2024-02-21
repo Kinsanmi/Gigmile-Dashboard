@@ -116,11 +116,6 @@
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 600px) {
   .request {
     padding: 15px 0 15px 15px;
@@ -143,13 +138,56 @@
   }
 }
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   .active .act-feed {
     margin-bottom: 20px;
-    width: 450px;
+    width: 460px;
     overflow-x: scroll;
-}
+  }
 }
 
 
+@media screen and (max-width: 390px) {
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 340px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .active .act-feed {
+    margin-bottom: 20px;
+    width: 330px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .active .act-feed {
+    margin-bottom: 10px;
+    width: 310px;
+    overflow-x: scroll;
+  }
+
+  .active .act-feed .repayment .table-list .list-img h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .active .act-feed .act-line .act-number h2 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .active .act-feed .act-line .act-number p {
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+  }
+  .active .act-feed .repayment .table-list .services h1 {
+    font-size: 15px;
+  }
+  .active .act-feed .repayment .table-list .amount h2 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+}

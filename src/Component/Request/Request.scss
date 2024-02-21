@@ -1,4 +1,4 @@
-.request {
+.mobile {
   flex: 2.5;
   padding: 20px 0 40px 40px;
 
@@ -65,43 +65,55 @@
   }
 }
 
-
-
-
-
-
 @media screen and (max-width: 600px) {
-  .request .request-list {
+  .mobile {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .mobile .request-list {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 30px;
   }
 
-  .request .request-list .list-icon {
+  .mobile .request-list .list-icon {
     width: 45%;
     flex-basis: auto;
   }
 
-  .request .request-list .list-icon .note {
+  .mobile .request-list .list-icon .note {
     font-size: 25px;
   }
-  .request .request-list .list-icon .list-details h3 {
+  .mobile .request-list .list-icon .list-details h3 {
     font-size: 18px;
   }
 }
 
-
-
 @media screen and (max-width: 480px) {
-  .request .request-list {
+  .mobile .request-list {
     flex-direction: column;
     margin-top: 20px;
   }
 
-  .request .request-list .list-icon {
+  .mobile .request-list .list-icon {
     width: 100%;
     flex-basis: auto;
   }
 }
 
+@media screen and (max-width: 320px) {
+  .mobile {
+    padding: 5px;
+  }
 
+  .mobile .request-list {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .mobile .request-list .list-icon {
+    width: 100%;
+    flex-basis: auto;
+  }
+}

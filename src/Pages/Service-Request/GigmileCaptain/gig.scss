@@ -40,3 +40,16 @@
     width: 450px;
   }
 }
+
+
+@media screen and (max-width:400px) {
+  .pending .active-list {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .pending .active-list {
+    width: 310px;
+  }
+}

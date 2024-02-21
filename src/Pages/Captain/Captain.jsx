@@ -16,7 +16,7 @@ export const Captain = () => {
           <div className="default-value">
             <div className="fuel">
               <div className="fuel-img">
-                <img src={frame} alt="" />
+                <img src={frame} alt="graph" />
               </div>
               <h2>Total Request value</h2>
             </div>

@@ -198,3 +198,11 @@
     white-space: nowrap;
   }
 }
+
+
+
+@media screen and (max-width: 320px) {
+  .pending .search .filter-search .filter {
+    display: none;
+  } 
+}

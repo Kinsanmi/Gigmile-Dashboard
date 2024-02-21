@@ -7,7 +7,7 @@ import { NewRequest } from "../New Request/NewRequest";
 
 export const Request = () => {
   return (
-    <div className="request">
+    <div className="mobile">
       <div className="request-list">
         <div className="list-icon">
           <MdPeople className="note" />

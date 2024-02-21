@@ -14,7 +14,7 @@
     padding: 0 40px;
     flex-wrap: wrap;
 
-    .hamburger-menu{
+    .hamburger-menu {
       display: none;
     }
 
@@ -25,8 +25,6 @@
       text-transform: capitalize;
       letter-spacing: 0.5px;
     }
-
-    
 
     .input-text {
       display: flex;
@@ -114,8 +112,8 @@
   }
 
   .nav-menu .wrapper {
-    padding: 15px;
-}
+    padding: 10px;
+  }
 
   .hamburger-menu {
     font-size: 24px;
@@ -136,15 +134,29 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .nav-menu .wrapper .input-text .note-icon {
     display: none;
+  }
+  .nav-menu .wrapper .input-text .input {
+    display: none;
+  }
+  .nav-menu .wrapper .input-text {
+    display: none;
+  }
+  .nav-menu .wrapper h1 {
+    font-size: 15px;
+    margin-bottom: 0px;
 }
-.nav-menu .wrapper .input-text .input {
-  display: none;
 }
-.nav-menu .wrapper .input-text {
-  display: none;
-}
+
+@media screen and (max-width: 320px) {
+  .nav-menu {
+    padding: 0px;
+    flex-wrap: wrap;
+    height: 45px;
+  }
+  .nav-menu .wrapper {
+    padding: 8px;
+  }
 }

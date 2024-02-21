@@ -99,11 +99,23 @@
   }
 }
 
-
-
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   .cap .active-cap .graph {
     width: 450px;
     overflow-x: scroll;
+  }
 }
+
+@media screen and (max-width: 400px) {
+  .cap .active-cap .graph {
+    width: 350px;
+    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cap .active-cap .graph {
+    width: 310px;
+    overflow-x: scroll;
+  }
 }
